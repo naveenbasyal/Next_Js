@@ -1,8 +1,12 @@
+import Navbar from "@/components/Navbar";
 
 const contact = () => {
   return (
-    <h1>contact</h1>
-  )
-}
+    <>
+      <Navbar />
+      <h1>This is contact Page</h1>
+    </>
+  );
+};
 
-export default contact
+export default contact;
