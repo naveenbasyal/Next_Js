@@ -4,7 +4,7 @@ const contact = () => {
   return (
     <>
       <Navbar />
-      <h1>This is contact Page</h1>
+      <h1 style={{color:"grey"}}>This is contact Page</h1>
     </>
   );
 };
