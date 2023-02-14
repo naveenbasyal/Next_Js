@@ -1,7 +1,20 @@
 import Link from "next/link";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 
-// import "../styles/globals.css" 
+// import "../styles/globals.css"
 const ErrorPage = () => {
+  const router = useRouter();
+  //   function handle404() {
+  //     router.push("/");
+  //   }
+  /* Redirect after some time using UseEffect  */
+  useEffect(() => {
+    setTimeout(() => {
+      router.push("/");
+    }, 3000);
+  }, []);
+
   return (
     <section className="page_404">
       <div className="container">
@@ -14,12 +27,14 @@ const ErrorPage = () => {
 
               <div className="contant_box_404">
                 <h3 className="h2">Look like you're lost</h3>
-
                 <p>the page you are looking for not avaible!</p>
-
                 <Link href="/" className="link_404">
                   Go to Home
                 </Link>
+                {/* we can redirect to home using onclick method also with the help of useRouter.push method */}
+                {/* <Link href="" onClick={handle404} className="link_404">
+                  Home
+                </Link> */}
               </div>
             </div>
           </div>
