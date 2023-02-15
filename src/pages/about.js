@@ -15,7 +15,7 @@ const about = () => {
             <div className="profileImg ">
               <img
                 style={{ width: "29rem" }}
-                src="https://media.giphy.com/media/7wA0YhMXvDBhTckOGM/source.gif?cid=790b7611b6565a9092ee51eeee34015858a0783fd77b6f31&rid=source.gif&ct=s"
+                src="/source.gif"
               />
             </div>
           </div>

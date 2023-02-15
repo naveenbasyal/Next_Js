@@ -8,7 +8,7 @@ const home = () => {
       </Head>
       <div className="container home ">
         <div class="row">
-          <div className="col-lg-8 col-sm-12 left_side shadow-out">
+          <div className="col-lg-7 col-sm-12 left_side shadow-out">
             <h1>
               Hi all , I'm Naveen <span className="wave">👋</span>
             </h1>
@@ -18,16 +18,16 @@ const home = () => {
               just want to say a Hi? I am always available to listen to you
             </p>
             <Link
-              href="mailto:naveenbasyak.001@gmail.com"
+              href="/contact"
               className="shadow-out p-2 contactBtn"
             >
               Contact Me
             </Link>
           </div>
-          <div className="col-lg-4 col-sm-12 right_side">
+          <div className="col-lg-5 col-sm-12 right_side">
             {" "}
-            <div className="profileImg shadow-in ">
-              <img src="/ProfilePic.jpg" className="shadow-out" />
+            <div className="profileImg  ">
+              <img src="/programmer.gif" className="shadow-out" />
             </div>
           </div>
         </div>

@@ -1,0 +1,74 @@
+.contact {
+  margin-top: 2rem;
+}
+.contact .right_side {
+  display: grid;
+  place-items: center;
+}
+.contact .left_side {
+  /* padding: 2rem 2rem; */
+}
+.contact .row {
+  margin-top: 2rem;
+}
+.contact .form-row {
+  padding: 2rem 0rem 2rem 4rem;
+}
+.contact .inputs {
+  background: #ecf0f3;
+  border: none;
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-clip: padding-box;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.contact .inputs:focus {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),
+    inset -2px -2px 12px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+    inset 2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+.contact .form-check .checkbox {
+  margin: 0 1rem;
+  font-size: 2rem;
+  height: 1rem;
+  width: 1rem;
+  background: #ecf0f3;
+  border: none;
+  cursor: pointer;
+}
+.contact .form-check {
+  display: flex;
+  align-items: center;
+  margin: 1.2rem 0;
+}
+.contact .form-check .checkbox :active {
+  background: #d4a42b;
+  border: none;
+}
+.contact .formBtn {
+  background: #ecf0f3;
+  padding: .6rem 1.4rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 0rem 0 0 2rem;
+  color: #212529;
+  border: none;
+}
+.formBtn.formBtn:active{
+    box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),
+    inset -2px -2px 12px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+    inset 2px 2px 8px rgba(0, 0, 0, 0.15);
+}

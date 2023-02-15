@@ -5,6 +5,7 @@ import "@/styles/Navbar.css";
 import "@/styles/404.css";
 import "@/styles/blogs.css";
 import "@/styles/home.css";
+import "@/styles/contact.css";
 
 export default function App({ Component, pageProps }) {
   return (
@@ -12,6 +13,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Next Js App</title>
+        <link rel="icon" type="image/x-icon" href="/favicon.png"></link>
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
           rel="stylesheet"
