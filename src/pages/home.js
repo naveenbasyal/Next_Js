@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Head from "next/head";
+import Image from "next/image";
 const home = () => {
   return (
     <>
@@ -7,7 +8,7 @@ const home = () => {
         <title>Home | Naveen Basyal</title>
       </Head>
       <div className="container home ">
-        <div class="row">
+        <div className="row">
           <div className="col-lg-7 col-sm-12 left_side shadow-out">
             <h1>
               Hi all , I'm Naveen <span className="wave">👋</span>
@@ -27,7 +28,7 @@ const home = () => {
           <div className="col-lg-5 col-sm-12 right_side">
             {" "}
             <div className="profileImg  ">
-              <img src="/programmer.gif" className="shadow-out" />
+              <Image src="/programmer.gif" className="shadow-out" />
             </div>
           </div>
         </div>

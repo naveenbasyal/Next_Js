@@ -1,20 +1,20 @@
 import Link from "next/link";
-
+import Image from "next/image";
 const Navbar = () => {
   return (
     <>
       <nav>
-        <div class="menu">
+        <div className="menu">
           <input type="checkbox" id="check" />
-          <div class="logo d-flex">
+          <div className="logo d-flex">
             <div className="profileImage shadow-in p-2">
-              <img src="/Avatar.jpg" alt="profile" className="shadow-out" />
+              <Image src="/Avatar.jpg" alt="profile" className="shadow-out" />
             </div>
             <Link href="/">NaveenBasyal</Link>
           </div>
           <ul>
-            <label class="btn cancel" for="check">
-              <i class="fas fa-times"></i>
+            <label className="btn cancel" htmlFor="check">
+              <i className="fas fa-times"></i>
             </label>
             <li>
               <Link href="/">Home</Link>
@@ -32,8 +32,8 @@ const Navbar = () => {
               <Link href="/contact">Contact</Link>
             </li>
           </ul>
-          <label for="check" class="btn bars">
-            <i class="fas fa-bars"></i>
+          <label htmlFor="check" className="btn bars">
+            <i className="fas fa-bars"></i>
           </label>
         </div>
       </nav>

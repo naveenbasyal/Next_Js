@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import { sendContactForm } from "lib/api";
 import Head from "next/head";
 import { useState } from "react";
+import Image from "next/image";
 
 const initValues = { name: "", email: "", subject: "", message: "" };
 const initState = { values: initValues };
@@ -35,14 +36,14 @@ const contact = () => {
         <div className="row">
           {/* -------------------Image--------------- */}
           <div className="right_side col-lg-5 p-5 ">
-            <img src="/contact.gif" alt="contact img" className="img-fluid" />
+            <Image src="/contact.gif" alt="contact img" className="img-fluid" />
           </div>
           {/* ---------------------Form ------------------- */}
           <div className="col-lg-6 left_side mx-4 ">
             <form method="post" onSubmit={onSubmit}>
               <div className="form-row shadow-in">
                 <div className="col-lg-10 mb-3">
-                  <label for="validationDefault01">First name</label>
+                  <label htmlhtmlFor="validationDefault01">First name</label>
                   <input
                     type="text"
                     name="name"
@@ -55,7 +56,7 @@ const contact = () => {
                   />
                 </div>
                 <div className="col-lg-10 mb-3">
-                  <label for="validationDefault02">Email</label>
+                  <label htmlFor="validationDefault02">Email</label>
                   <input
                     type="email"
                     name="email"
@@ -68,7 +69,7 @@ const contact = () => {
                   />
                 </div>
                 <div className="col-lg-10 mb-3">
-                  <label for="validationDefault03">Subject</label>
+                  <label htmlFor="validationDefault03">Subject</label>
                   <input
                     type="text"
                     name="subject"
@@ -81,7 +82,7 @@ const contact = () => {
                   />
                 </div>
                 <div className="col-lg-10 mb-3">
-                  <label for="validationDefault02">Message</label>
+                  <label htmlFor="validationDefault02">Message</label>
                   <textarea
                     rows={4}
                     type="text"
@@ -103,7 +104,7 @@ const contact = () => {
                       id="invalidCheck2"
                       required
                     />
-                    <label className="form-check-label" for="invalidCheck2">
+                    <label className="form-check-label" htmlFor="invalidCheck2">
                       Agree to terms and conditions
                     </label>
                   </div>
