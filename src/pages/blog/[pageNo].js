@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
-
+import Link from "next/link";
+import Head from "next/head";
 //Dynamic Routing using [] brackets
 
 export const getStaticPaths = async () => {
@@ -36,13 +37,21 @@ const pageNo = ({ data }) => {
   return (
     //user can type like blogs/blog<whatever page or text>
     <>
+     <Head>
+        <title>Blog No {id} | Naveen Basyal</title>
+      </Head>
       <Navbar />
-      <div className="w-100 d-flex justify-content-center">
-        <div className="col-lg-9 col-sm-12 shadow-out m-4 p-4 ">
-          <span className="mx-2 fs-3 ">{`${id}.`}</span>
-          <span className="mx-3 fs-3 px-2">{title}</span>
-          <p className="m-3 text-grey">{body}</p>
-        </div>
+      <div className="container">
+          <div className="col-lg-12 col-sm-12 shadow-out m-4 p-4">
+            <div class="d-flex">
+              <div className="mx-2 fs-3 ">{`${id}.`}</div>
+              <div className=" fs-3 px-2">{title}</div>
+            </div>
+            <div className="my-2 mx-4 px-3 text-grey">{body}</div>
+          </div>
+          <Link href="/blog" className="shadow-out p-2 fs-3 ">
+            Back
+          </Link>
       </div>
     </>
   );

@@ -1,0 +1,64 @@
+.home .row {
+  margin-top: 7rem;
+}
+.home .left_side {
+  padding: 3rem;
+}
+.home .left_side .wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+.home .right_side {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.home .left_side p {
+  font-size: 1.5rem;
+  color: rgb(61, 61, 61);
+}
+.home .left_side .contactBtn:hover {
+  box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),
+    inset -2px -2px 12px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+    inset 2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+.home .right_side .profileImg {
+  display: grid;
+  place-items: center;
+  padding: 1.4rem 1.4rem;
+}
+.home .right_side img {
+  width: 20rem;
+  padding: 1rem 1rem;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(24deg);
+  }
+  20% {
+    transform: rotate(-18deg);
+  }
+  30% {
+    transform: rotate(24deg);
+  }
+  40% {
+    transform: rotate(-14deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

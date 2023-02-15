@@ -1,0 +1,13 @@
+.blogs{
+    display: grid;
+    place-items: center;
+    /* width: 100%; */
+}
+.blogs .id{
+    display: grid;
+    place-items: center;
+}
+.blogs .title{
+    text-decoration: none;
+    text-transform: capitalize;
+}
